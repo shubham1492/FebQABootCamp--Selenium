@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test-Suite" >
+    <test name="DataProviderExample" >
+        <classes>
+            <class name="day29.TestNgDataProviderExample2" />
+            <class name="day29.TestNgDataProviderDivision"></class>
+        </classes>
+    </test>
+</suite>
