@@ -1,6 +1,7 @@
 package dataprovider;
 
 import org.testng.annotations.DataProvider;
+import utils.ExcelReader;
 
 public class DP {
 
@@ -12,4 +13,14 @@ public class DP {
                 {16,45}
         };
     }
+
+    @DataProvider(name="loginDetails")
+    public Object[][] loginMethod(){
+
+        Object [][] arrayObject = ExcelReader.getExcelData("src/test/resources/Testdata.xls",
+                "userdata");
+        return arrayObject;
+    }
+
+
 }
